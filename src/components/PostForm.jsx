@@ -15,21 +15,21 @@ const PostForm = ({ onAddPost }) => {
     };
 
     return (
-        <div class="post-form">
+        <div className="post-form">
             <input 
                 type="text" 
                 placeholder="Название игры" 
-                class="input-field"
+                className="input-field"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
             />
             <textarea 
                 placeholder="Твое мнение..." 
-                class="input-field"
+                className="input-field"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
             />
-            <button onClick={handleSubmit} class="btn primary">
+            <button onClick={handleSubmit} className="btn primary">
                 Плюнуть мнением
             </button>
         </div>
